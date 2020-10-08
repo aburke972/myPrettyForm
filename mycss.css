@@ -1,0 +1,45 @@
+*{
+    margin: O;
+    padding: 0;
+}
+
+ 
+
+:root{
+    --rgb-form-r:230;
+    --rgb-form-g:240;
+    --rgb-form-b:255;
+    --rgb-color-delta:50;
+    /* --rbg-fieldset-r:calc(var(--rbg-form-r) - 30);
+    --rgb-fieldset-g:calc(var(--rbg-form-g) - 30);
+    --rgb-fieldset-b:calc(var(--rbg-form-b) - 30); */
+    /* --form-color: rgb(var(--rgb-form-r),var(--rgb-form-g),var(--rgb-form-b)); */
+/*  --form-fieldset-color: rgb(var(--rgb-fieldset-r),var(--rgb-fieldset-g),var(--rgb-fieldset-b)); */
+}
+
+#main-form{
+    height: 500px;
+    border-color: indigo;
+}
+
+legend{
+    background-color: rgb(calc(var(--rgb-form-r) - var(--rgb-color-delta)),calc(var(--rgb-form-g) - var(--rgb-color-delta)),calc(var(--rgb-form-b) - var(--rgb-color-delta)));
+    border: 10p;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+
+fieldset{
+    background-color: rgb(var(--rgb-form-r),var(--rgb-form-g),var(--rgb-form-b));
+    box-shadow: -5px 5px 6px 0px rgb(calc(var(--rgb-form-r) - --rgb-color-delta),calc(var(--rgb-form-r) - --rgb-color-delta),calc(var(--rgb-form-r) - --rgb-color-delta));
+    margin-bottom: 50px;
+    padding: 10px;;
+    border-radius: 3px;
+    width: 400px;
+}
+
+fieldset div{
+    padding: 5px;
+    color:black;
+}

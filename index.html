@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My pretty form</title>
+        <link rel="stylesheet" href="mycss.css">
+    </head>
+    <body>
+        <div id="main-form">
+            <form method="POST">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div id="form-field">
+                        <label for id="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div id="form-field">
+                        <label for id="firstname">First Name</label>
+                        <input type="text" id="firstname" name="firstname" required>
+                    </div>
+                    <div id="form-field">
+                        <label for id="mail">Mail address</label>
+                        <input type="email" id="mail" name="mail" required>
+                    </div>
+                    <div id="form-field">
+                        <label for id="age">Age</label>
+                        <input type="number" id="age" name=age required min="18" max="99" maxlength="2">
+                    </div>
+                    <div id="form-field">
+                        <label for id="male">Male</label>
+                        <input type="radio" id="male" name="genre" value="Male" required>
+                        <label for id="female">Female</label>
+                        <input type="radio" id="female" name="genre" value="Female" required>
+                    </div>
+                    <div id="form-field">
+                        <label for id="country">Country</label>
+                        <select id="country" name="country" required>
+                            <optgroup label="Europe">
+                                <option value="france">France</option>
+                                <option value="italie">Italy</option>
+                            </optgroup>
+                            <optgroup label="Asia">
+                                <option value="china">China</option>
+                                <option value="japan">Japan</option>
+                            </optgroup>
+                            <optgroup label="Africa">
+                                <option value="mali">Mali</option>
+                                <option value="algeria">Algeria</option>
+                            </optgroup>
+                        </select> 
+                    </div>
+                    <div id="form-field">
+                        <input type="submit" value="Valider">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Skills</legend>
+                </fieldset>
+                <fieldset>
+                    <legend>Credentials</legend>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
